@@ -1,4 +1,5 @@
 const phones = ['Samsung', 'iPhone', 'Google Pixel', 'Vivo', 'Honor', 'iQoo', 'Huawei', 'Redmi'];
 
-phones.fill("phone", 1, 3);
-console.log(phones);
+for(let [index, phone] of phones.entries()){
+    console.log(`Index: ${index} Phone: ${phone}`);
+}

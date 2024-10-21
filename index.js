@@ -1,4 +1,10 @@
 const phones = ['Samsung', 'iPhone', 'Google Pixel', 'Vivo', 'Honor', 'Huawei'];
 
-const phonesThatIncludeIs = phones.filter(phone => phone.includes('i'));
-console.log(phonesThatIncludeIs);
+const phonesSeparatedByCommas = phones.reduce((previous, current,  currentId) => {
+    let sentence = previous + ", " + current;
+    if(currentId == phones.length - 1){
+        sentence += ".";
+    }
+    return sentence;
+});
+console.log(phonesSeparatedByCommas);

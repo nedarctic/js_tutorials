@@ -1,4 +1,5 @@
 const phones = ['Samsung', 'iPhone', 'Google Pixel', 'Vivo', 'Honor', 'Huawei'];
 
-const poppedItem = phones.pop();
-console.log(poppedItem);
+console.log('Phones array length before pushing', phones.length);
+phones.push('iQoo');
+console.log('Phones array length after pushing:', phones.length);

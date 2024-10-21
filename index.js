@@ -1,4 +1,4 @@
-const phones = ['iPhone', 'Google Pixel', 'Vivo', 'Honor'];
+const phones = ['Samsung', 'iPhone', 'Google Pixel', 'Vivo', 'Honor', 'iQoo', 'Huawei', 'Redmi'];
 
-const isPhonesAllIncludeO = phones.every(phone => phone.includes('o'));
-console.log(isPhonesAllIncludeO);
+const isPhonesSomeIncludeO = phones.some(phone => phone.includes('o'));
+console.log(isPhonesSomeIncludeO);

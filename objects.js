@@ -1,11 +1,13 @@
-const obj1 = {
-    a: 1,
-    b: 2
+const phone = {
+    brand: "Vivo",
+    model: "Vivo X200 Pro",
+    year: "2024",
+    storage: "1TB",
+    ram: "16GB",
+    price: "$1000"
 }
 
-const obj2 = {
-    c: 3,
-    d: 4
-}
+Object.freeze(phone);
 
-console.log(Object.assign(obj1, obj2));
+phone.brand = "Google";
+console.log(Object.values(phone));

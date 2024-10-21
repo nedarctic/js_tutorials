@@ -1,3 +1,3 @@
-const phones = ['Samsung', 'iPhone', 'Google Pixel', 'Vivo', 'Honor', 'iQoo', 'Huawei', 'Redmi'];
+const phones = ['Samsung', 'iPhone', ['Google Pixel', ['Vivo', 'Honor']], 'iQoo', 'Huawei', 'Redmi'];
 
-console.log(phones.join(', '));
+console.log(phones.flat(2));

@@ -8,4 +8,4 @@ const phone = {
     RAM: "16GB"
 }
 
-console.log(Object.entries(phone));
+Object.entries(phone).map(property => console.log(property[0] + ": " + property[1]));

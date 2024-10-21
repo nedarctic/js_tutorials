@@ -1,4 +1,4 @@
-const arr = [1, 2, 3];
+const phones = ['Samsung', 'iPhone', 'Google Pixel', 'Vivo', 'Honor', 'iQoo', 'Huawei', 'Redmi'];
 
-const nestedArr = arr.flatMap(x => [x * 2]);
-console.log(nestedArr);
+phones.fill("phone", 1, 3);
+console.log(phones);

@@ -1,5 +1,6 @@
-const phones = ['Samsung', 'iPhone', 'Google Pixel', 'Vivo', 'Honor', 'Huawei'];
+const phonesArr1 = ['Samsung', 'iPhone', 'Google Pixel', 'Vivo', 'Honor', 'Huawei'];
 
-const splicedArr = phones.splice(0, 2, "Motorolla", "Redmi");
-console.log("Spliced array:", splicedArr);
-console.log("phones after splicing:", phones);
+const phonesArr2 = ['iQoo', 'Motorolla', 'Tecno', 'Redmi', 'Infinix'];
+
+const phonesArr = phonesArr1.concat(phonesArr2);
+console.log(phonesArr);

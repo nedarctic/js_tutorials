@@ -8,4 +8,4 @@ const phone = {
     RAM: "16GB"
 }
 
-console.log(Object.keys(phone));
+console.log(Object.values(phone));

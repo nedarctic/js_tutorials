@@ -1,4 +1,5 @@
 const phones = ['Samsung', 'iPhone', 'Google Pixel', 'Vivo', 'Honor', 'Huawei'];
 
-const slicedArr = phones.slice(1, 3);
-console.log(slicedArr);
+const splicedArr = phones.splice(0, 2, "Motorolla", "Redmi");
+console.log("Spliced array:", splicedArr);
+console.log("phones after splicing:", phones);

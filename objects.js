@@ -7,7 +7,8 @@ const phone = {
     price: "$1000"
 }
 
-Object.freeze(phone);
+Object.seal(phone); // prevents adding new properties but allows modifying existing ones
 
-phone.brand = "Google";
-console.log(Object.values(phone));
+phone.camera = "Zeiss"; // adding new property
+phone.price = "1300$"; // modifying an existing property
+console.log(Object.entries(phone));
